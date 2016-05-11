@@ -15,6 +15,11 @@ module.exports.bootstrap = function(cb) {
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
   cb();
   
-  //User.create({email:'admin@correo.com',password:"admin2016",perfil:"admin"}).then(function(res){});
+  User.find({}).then(function(result){
+    if(result.length <= 0){
+      User.create({email:'admin@correo.com',password:"admin2016",perfil:"admin"})
+      .then(function(res){});
+    }
+  });
   
 };
