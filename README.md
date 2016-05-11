@@ -21,6 +21,6 @@ Por default levanta en el puerto 1337 y esto seria suficiente para estar recibie
 El usuario administrador por defecto es: 
 
 ```bash
-$ email: admin@correo.com
-$ password: admin2016
+>> email: admin@correo.com
+>> password: admin2016
 ```
